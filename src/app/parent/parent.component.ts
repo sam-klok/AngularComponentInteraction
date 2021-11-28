@@ -12,4 +12,10 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  person1 = {
+    id: 1,
+    name: 'John Smith',
+    dob: '1/22/1980'
+  }
+
 }
