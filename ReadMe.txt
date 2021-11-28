@@ -3,7 +3,11 @@ I tried to simplify it as much as possible.
 
 Based on:
 
-1. Component interaction
+1.1. Sharing data between child and parent directives and components
+by using EventEmitter
+https://angular.io/guide/inputs-outputs
+
+1.2.Component interaction
 https://angular.io/guide/component-interaction
 
 2. Angular Fundamentals by Jim Cooper and Joe Eames
