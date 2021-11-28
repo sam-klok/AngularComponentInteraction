@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+//import { EventEmitter } from 'stream';
 
 @Component({
   selector: 'app-child',
@@ -12,6 +13,12 @@ export class ChildComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() personDetail: any
+  @Input() personDetail: any;
+  @Output() childClick = new EventEmitter<string>();
+
+  handleClickMe(){
+    console.log("from child component: bitton 'Click Me', clicked.");
+    this.childClick.emit('foo');
+  }
 
 }

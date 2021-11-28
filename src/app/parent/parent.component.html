@@ -2,6 +2,9 @@
     <p>parent works!</p>
     <br/>    
     <div>
-        <app-child [personDetail]='person1'></app-child>
+        <app-child 
+            [personDetail]='person1'
+            (childClick)="handleChildClicked($event)"
+            ></app-child>
     </div>
 </div>
