@@ -18,7 +18,8 @@ export class ChildComponent implements OnInit {
 
   handleClickMe(){
     console.log("from child component: bitton 'Click Me', clicked.");
-    this.childClick.emit('foo');
+    //this.childClick.emit('foo');
+    this.childClick.emit(this.personDetail.name);
   }
 
 }

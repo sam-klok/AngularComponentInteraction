@@ -18,10 +18,11 @@ export class ParentComponent implements OnInit {
     dob: '1/22/1980'
   }
 
-  //$dataFromChild:string = "";
+  dataFromChild: string = "";
 
   handleChildClicked(x: string){
     console.log('parent received: ', x);
+    this.dataFromChild = x;
   }
 
 }

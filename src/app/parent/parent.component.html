@@ -7,4 +7,16 @@
             (childClick)="handleChildClicked($event)"
             ></app-child>
     </div>
+    <div>Data from child above: {{dataFromChild}}</div>
+    <br/>
+    <div>Another child component below:</div>
+    <div>
+        <app-child-var #thumbnail>
+
+        </app-child-var>
+    </div>
+    <div>Let's send some data to second component "child-var":</div>
+    <button (click)="thumbnail.transferData()">Click Me!</button>
+    <div>Data from second compnent "child-var": {{thumbnail.someProperty}}</div>
+
 </div>
